@@ -61,11 +61,62 @@ nav.container{
   text-decoration: none;
   padding-left: 2rem;
 }
+#Services{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* FIXME:margin-top:3rem;
+  margin-bottom:3rem; */
+  height:8rem;
+}
+.service{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid red;
+  text-align: center;
+
+}
+.service img{
+  height:4rem;
+  width:3.5rem;
+}
+.service img.wide{
+  height:3rem;
+  width:5rem;
+}
+.about{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info{
+  max-width:35%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.omega{
+  margin-right: 5%;
+}
+.about h1{
+  background-color: cadetblue;
+  color:white;
+  font-weight: bold;
+  font-size: 1rem;
+  width:10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+.about p{
+  margin-top: 1rem;
+}
 footer.container{
   background-color: azure;
   display:flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 5rem;
 }
 footer img{
   height:1.5rem;
