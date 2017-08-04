@@ -72,12 +72,10 @@ nav.container{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   text-align: center;
   width: 5rem;
   height: 12rem;
   margin: 3rem;
-
 }
 .service img{
   height:4rem;
