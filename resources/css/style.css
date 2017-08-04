@@ -5,19 +5,19 @@ html{
 }
 body{
   margin:0;
+  padding:0;
 }
 .mainBanner{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-
   position: relative;
   padding-top: 1rem;
   height:31rem;
 }
 .container{
   max-width: 960px;
-  margin:auto;
+  margin:0 auto;
 }
 nav.container{
   display:flex;
@@ -39,7 +39,7 @@ nav.container{
   font-size: 1rem;
   margin-left: 150px;
 }
-.banner h1{
+.banner.container h1{
   width:45%;
   background-color:white;
   padding:1.5rem 5rem 1.5rem 5rem;
@@ -125,4 +125,101 @@ footer img{
 }
 footer span{
   color:black;
+}
+@media only screen and (max-width:1224px) {
+  .container{
+    width: 100%;
+  }
+  .mainBanner{
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    padding-top: 0;
+    height:22rem;
+  }
+  nav.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    font-size: 1rem;
+    color:white;
+    margin-top: 0;
+  }
+  .banner.container h1{
+    width:35%;
+    background-color:white;
+    padding:0.75rem 4rem 0.75rem 4rem;
+    font-weight:bold;
+    font-size: 1.33rem;
+    line-height: 1.2;
+    margin-right:2rem;
+    margin-top: 5rem;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width:835px) {
+  .mainBanner{
+    height:17rem;
+    background-position: 20%;
+    background-size: cover;
+  }
+  .container{
+    width: 100%;
+  }
+  .banner.container h1{
+    width:100%;
+    background-color:white;
+    padding:1rem 0 1rem 0;
+    font-weight:bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-right:0;
+    margin-top: 9rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  #Services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+}
+  .service{
+    font-size: 0.77rem;
+    margin-top: 0;
+    margin-bottom: 1.54rem;
+  }
+  .about.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.77rem;
+    width:100%;
+  }
+  .omega{
+    margin-right: 0;
+  }
+  .info.omega{
+    max-width:100%;
+  }
+  .info{
+    max-width:100%;
+    margin-top:0;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .info h1{
+    width:100%;
+    margin-bottom: 1rem;
+  }
+  footer img{
+    margin:0 auto;
+  }
+  footer span{
+    display:none
+  }
 }
